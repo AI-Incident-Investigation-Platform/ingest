@@ -1,0 +1,25 @@
+[service]
+name = "ingest"
+port = 8005
+bind_host = "127.0.0.1"
+
+[cache]
+host = ""
+port = 6379
+password = ""
+db = 0
+
+[rabbitmq]
+url = ""
+
+[projects]
+url = "http://projects.apps:8003"
+
+[auth]
+url = "http://auth.apps:8001"
+client_id = "ingest"
+client_secret = ""
+
+[tracing]
+enabled = true
+otlp_endpoint = ""
