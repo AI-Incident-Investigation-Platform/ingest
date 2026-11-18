@@ -1,0 +1,83 @@
+[[scenario]]
+id = "ING-001"
+title = "Неизвестный ключ отклоняется без чтения тела"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-002"
+title = "Без подтверждения RabbitMQ ответ 202 не отдаётся"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-003"
+title = "Пачка Alertmanager ограничена 50 алертами"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-004"
+title = "Тело больше 256 КиБ отклоняется"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-005"
+title = "Выкатка публикуется командой projects"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-006"
+title = "Неверный scope не публикует алерт"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-007"
+title = "Лимит проекта возвращает 429 и Retry-After"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-008"
+title = "Чужой проект в теле отклоняется"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-009"
+title = "Для каждого алерта Alertmanager выдаётся квитанция"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-010"
+title = "Идентификатор ошибки совпадает с заголовком и не пустой"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-011"
+title = "Повтор пачки Alertmanager сохраняет ID квитанций"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-012"
+title = "Неиспользуемые поля Alertmanager не попадают в очередь"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-013"
+title = "Отклонение публикации в заполненную очередь алертов возвращает 429"
+layer = "unit"
+domain = "ingest"
+
+[[scenario]]
+id = "ING-014"
+title = "Заполненная очередь RabbitMQ возвращает 429 отправителю"
+layer = "integration"
+domain = "ingest"
