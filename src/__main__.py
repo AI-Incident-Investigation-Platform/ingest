@@ -1,3 +1,6 @@
-from src.runtime import main
+def main() -> None:
+    print("ingest: стартовая точка входа")
 
-main()
+
+if __name__ == "__main__":
+    main()
